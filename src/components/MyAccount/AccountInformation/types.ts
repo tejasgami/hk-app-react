@@ -1,0 +1,9 @@
+import { Status } from 'Models/Status';
+
+export const ACCOUNT_INFORMATION_SAVE = 'ACCOUNT_INFORMATION_SAVE';
+export const ACCOUNT_INFORMATION_SAVE_SUCCESS = 'ACCOUNT_INFORMATION_SAVE_SUCCESS';
+export const ACCOUNT_INFORMATION_STATUS = 'ACCOUNT_INFORMATION_STATUS';
+
+export type IState = {
+  status: Status
+};

@@ -1,0 +1,166 @@
+@value theme: "../../styles/theme.css";
+@value grayBorder, grayDark, profitColor, lossColor, zeroColor, blue, green from theme;
+
+.wrapper {
+  padding-bottom: 20px;
+}
+
+.mainPanel {
+  border-radius: 4px;
+  background-color: #fbfcfe;
+  border: grayBorder;
+  margin-top: 0px;
+  padding: 0px 0 0;
+}
+
+.tableHolder {
+  padding: 0px;
+  border-bottom: grayBorder;
+  display: flex;
+}
+
+.tableHolder:last-child {
+  border-bottom: none;
+}
+
+.tradesTableWrapper {
+  padding: 0 20px;
+}
+
+.leftPanel{
+  width: 20%;
+  float: left;
+  height: auto;
+  border-right: 1px solid #d2dae5;
+  margin-top: 0.5px;
+  max-width: 335px;
+  min-width: 335px;
+}
+.leftPanel ul, .leftPanel ul li{
+  list-style-type: none;
+}
+.leftPanel ul li{
+  height: 60px;
+  background-color: #fbfcfd;
+  box-shadow: inset 0 -1px 0 0 #d2dae5;
+  padding-left: 30px;
+  display: table;
+  width: 100%;
+  position: relative;
+}
+
+.leftPanel ul li a{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.rightPanel{
+  width: 73%;
+  float: left;
+  padding: 20px;
+  margin: 0px auto;
+  height: auto;
+  padding-top: 65px;
+  text-align: center;
+}
+.rightPanelSub{
+  margin: 0 auto;
+  float: none;
+  display: inline-block;
+  width: 696px;
+  text-align: left;
+}
+.defaultMenuTab a{
+  cursor: pointer;
+}
+.activeMenuTab{
+  background: #fff;
+  width: 100.5% !important;
+}
+.activeMenuTab a{
+  font-weight: bold;
+}
+.bottomPanel{
+  border-top: grayBorder;
+  margin-top: 40px;
+  padding-top: 30.5px;
+}
+.submitButton{
+  min-width: 250px;
+}
+.leftPanelDropDown{
+  display: none;
+}
+.leftPanelList{
+  display: block;
+}
+.menusFullWidth{
+  width: auto;
+}
+@media screen and (max-width: 1075px) {
+  .rightPanelSub {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .leftPanel{
+    font-size: 13px;
+    min-width: 200px;
+  }
+  .rightPanelSub {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+  .mainPanel {
+    border-radius: 0px;
+    border-right: 0px;
+    border-left: 0px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .leftPanel{
+    width: 100%;
+    max-width: 100%;
+    float: none;
+    border: none;
+  }
+  .leftPanelList{
+    display: none;
+  }
+  .rightPanel {
+    width: 100%;
+    float: none;
+    padding-left: 0px;
+    padding-right:0px;
+    padding-top: 20px;
+  }
+  .tableHolder {
+    display: block;
+    padding-left: 15px;
+    padding-right:15px;
+  }
+  .leftPanelDropDown{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width:100%;
+  }
+  .menusFullWidth{
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .leftPanelDropDown {
+    min-width: 250px !important;
+  }
+  .bottomPanel{
+    margin-top: 30px;
+  }
+}

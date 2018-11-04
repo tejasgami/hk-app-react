@@ -1,0 +1,58 @@
+@value theme: "../../styles/theme.css";
+@value blue from theme;
+@value screen-sm from theme;
+
+.title {
+  margin: 10vh 0 70px 0;
+  text-align: center;
+}
+
+.panel {
+  background-color: #ffffff;
+  border: solid 1px #d2d9e4;
+  border-radius: 5px;
+  padding: 30px 30px;
+  margin-top: 69px;
+}
+
+.mobileHeader {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e1e5ec;
+}
+
+.mobileHeader img {
+  width: 200px;  
+}
+
+.mobileHeader i {
+  color: blue;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+@media screen and (max-height: 800px) {
+  .title {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: screen-sm) {
+  .panel {
+    margin: 0 -15px;
+    padding: 20px 15px;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .title {
+    margin: 30px;
+  }
+
+  .mobileHeader {
+    display: flex;
+  }
+}

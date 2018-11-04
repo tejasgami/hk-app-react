@@ -1,0 +1,5 @@
+{
+  "host": "http://beta.api.hk.io/api",
+  "wsSuggestions": "ws://18.220.107.23:3000/ws/suggestions"
+}
+

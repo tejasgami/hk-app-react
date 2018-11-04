@@ -1,0 +1,40 @@
+@value theme: "../../styles/theme.css";
+@value blue, blueText, validationRed, grayBorder, grayDark from theme;
+@value screen-sm, screen-md from theme;
+
+.wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-top: 21px;
+}
+
+.wrapper :global(.tooltip) {
+  top: 23px;
+}
+
+.label {
+  color: grayDark;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: -2px;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.hasError .label {
+  color: validationRed;
+}
+
+@media screen and (max-width: screen-md) {
+  .wrapper :global(.tooltip) {
+    top: 60px;
+  }
+}
+
+@media screen and (max-width: screen-sm) {
+  .wrapper {
+    margin-bottom: 10px;
+  }
+}

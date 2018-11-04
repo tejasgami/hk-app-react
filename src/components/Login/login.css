@@ -1,0 +1,17 @@
+@value theme: "../../styles/theme.css";
+@value screen-sm from theme;
+
+.signup {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.paddedRow {
+  padding: 20px 0 8px 0;
+}
+
+@media screen and (max-width: screen-sm) {
+  .paddedRow {
+    padding-bottom: 20px;
+  }
+}

@@ -1,0 +1,114 @@
+@value theme: "Styles/theme.css";
+@value grayBorder, grayDark, blue from theme;
+@value screen-md from theme;
+
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px 0 rgba(103, 125, 157, 0.1);
+}
+
+.headerLayout {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  background-image: url(/public/assets/images/header-logo.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 182px;
+  height: 71px;
+}
+
+.header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.navigation .menu {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 75px;
+  height: 70px;
+  border-bottom: solid 2px transparent;
+  margin-right: 51px;
+  padding: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.navigation .menu.active {
+  color: blue;
+  font-weight: 700;
+  border-bottom: solid 2px blue;
+}
+
+.right {
+  margin-top: 15px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1060px) {
+  .headerLayout {
+    height: 103px;    
+  }
+
+  .headerLayout::before {
+    content: '';
+    width: 100%;
+    order: 4;
+  }
+  
+  .header ul {
+    order: 5;
+    margin-top: auto;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  .logo {
+    width: 160px;
+    height: 60px;
+  }
+
+  .navigation .menu {
+    line-height: 44px;
+    height: 44px;
+  }
+}
+
+.myAccountIcon {
+  display: none;
+}
+
+@media screen and (max-width: screen-md) {
+  .navigation .menu {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+
+  .myAccountIcon {
+    display: inline;
+  }
+
+  .myAccountIcon i {
+    font-size: 20px;
+    top: 3px !important;
+  }
+
+  .myAccount {
+    display: none;
+  }
+
+  .right :global(.margin-right) {
+    margin-right: 10px;
+  }
+}

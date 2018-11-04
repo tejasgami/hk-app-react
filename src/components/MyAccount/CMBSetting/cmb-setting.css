@@ -1,0 +1,171 @@
+@value theme: "../../../styles/theme.css";
+@value grayBorder, grayDark, profitColor, lossColor, zeroColor, blue, green from theme;
+
+.header {
+  padding-top: 5%;
+  position: relative;
+  text-align: left;
+}
+
+.baseInputBox {
+  padding-bottom: 235px;
+}
+
+.baseExitBox {
+  padding-bottom: 150px;
+}
+
+.base input {
+  width: 217px;
+  height: 50px;
+}
+
+.baseButton {
+  width: 232px;
+  height: 40px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.description {
+  width: 690px;
+  height: 21px;
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: left;
+  color: #677d9d;
+  padding: 40px 0 40px 0;
+}
+
+.withdrawalDescription {
+  width: 690px;
+  height: 21px;
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: left;
+  color: #677d9d;
+  padding: 40px 0 70px 0;
+}
+
+.notificationSetting {
+  width: 690px;
+  height: 186px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #d2dae5;
+}
+
+.sendEmail{
+  height: 21px;
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: left;
+  color: #677d9d;
+  margin-top: 41px;
+}
+
+.sendSMS {
+  height: 21px;
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: left;
+  color: #677d9d;
+  margin-top: 21px;
+}
+
+.tradeCoins {
+  height: 21px;
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: left;
+  color: #677d9d;
+  margin-top: 21px;
+  margin-bottom: 41px;
+}
+
+.bottomPanel{
+  border-top: grayBorder;
+  margin-top: 30px;
+  padding-top: 30.5px;
+}
+
+.comboRow {
+  margin-bottom: 20px;
+}
+
+.comboText {
+  display: table-cell;
+  vertical-align: bottom;
+  border-bottom: grayBorder;
+}
+
+.comboText > div {
+  margin-bottom: 0;
+}
+
+.comboText input {
+ border-bottom: none !important;
+}
+
+.comboSelect {
+  display: table-cell;
+  vertical-align: middle;
+  width: 80px;
+  padding-left: 5px;
+  border-bottom: grayBorder;
+}
+
+.comboSelect > div {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.comboSelect :global(.Select-control) {
+  font-size: 15px;
+  height: 30px;
+}
+
+.comboSelect :global(.Select-control) :global(.Select-value), .comboSelect :global(.Select-control) :global(.Select-placeholder) {
+  line-height: 32px !important;
+}
+@media screen and (max-width: 1075px) {
+  .withdrawalDescription, .description, .notificationSetting {
+    width: 100%;
+    height: auto;
+  }
+  .comboRow {
+    max-width: 100%;
+    flex: 1;
+  }
+}
+@media screen and (max-width: 860px) {
+  .description {
+    padding:20px 0px 20px 0px;
+  }
+  .comboSelect {
+    width: 55%;
+  }
+  .base input {
+    width: 100%;
+  }
+  .baseInputBox {
+    padding-bottom: 75px;
+  }
+  .baseExitBox {
+    padding-bottom: 50px;
+  }
+  .sendSMS, .sendEmail{
+    margin-top: 20px;
+  }
+  .tradeCoins{
+    margin-bottom: 20px;
+  }
+}

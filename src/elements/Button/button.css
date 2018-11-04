@@ -1,0 +1,119 @@
+@value theme: "../../styles/theme.css";
+@value blue, blueShadow, blueShadowLarge, blueLight, blueDark, green, greenShadow, greenLight, greenDark, red, redDark, redLight, redShadow, white, whiteShadow, whiteShadowLarge, orange, orangeShadow, orangeShadowLarge, orangeLight, orangeDark from theme;
+@value screen-md theme;
+
+.base {
+  display: inline-block;
+  text-decoration: none !important;
+  border: 0;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.full {
+  width: 100%;
+}
+
+.blue {
+  background-color: blue;
+  box-shadow: blueShadow;
+}
+
+.blue:hover {
+  background-color: blueLight;
+  box-shadow: blueShadowLarge;
+}
+
+.blue:active {
+  background-color: blueDark;
+  box-shadow: none;
+}
+
+.green {
+  background-color: green;
+  box-shadow: greenShadow;
+}
+
+.green:hover {
+  background-color: greenLight;
+}
+
+.green:active {
+  background-color: greenDark;
+}
+
+.red {
+  background-color: red;
+  box-shadow: redShadow;
+}
+
+.red:hover {
+  background-color: redLight;
+}
+
+.red:active {
+  background-color: redDark;
+}
+
+.orange {
+  background-color: orange;
+  box-shadow: orangeShadow;
+}
+
+.orange:hover {
+  background-color: orangeLight;
+}
+
+.orange:active {
+  background-color: orangeDark;
+}
+
+.white {
+  background-color: white;
+  color: blue;
+  box-shadow: whiteShadow;
+}
+
+.white:hover {
+  box-shadow: whiteShadowLarge;
+}
+
+.white:active {
+  box-shadow: none;
+}
+
+.large {
+  font-size: 15px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+}
+
+.medium {
+  font-size: 15px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+
+.small {
+  height: 34px;
+  padding: 0 8px;
+  line-height: 35px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.disabled, input[disabled] {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.fixed-width {
+  width: 160px;
+}

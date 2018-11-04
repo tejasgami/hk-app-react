@@ -1,0 +1,37 @@
+@import "theme";
+
+.react-toggle-mr {
+  margin: auto;
+}
+
+.react-toggle--checked .react-toggle-track {
+  background-color: @blue;
+}
+
+.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: @grayDark;
+}
+
+.react-toggle.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: @blueDark;
+}
+
+.react-toggle-track {
+  width: 38px;
+  height: 22px;
+  background-color: @gray;
+}
+
+.react-toggle-thumb {
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  left: 5px;
+  border: none;
+  box-shadow: none !important;
+}
+
+.react-toggle--checked .react-toggle-thumb {
+  left: 19px;
+  top: 3px;
+}

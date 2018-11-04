@@ -1,0 +1,44 @@
+@value theme: "../../styles/theme.css";
+
+@value blueText, grayDark, whiteShadow, white from theme;
+
+.title {
+  margin: 10vh 0 35px 0;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  margin: 0 auto 50px;
+  width: 585px;
+  font-size: 20px;
+  color: grayDark;
+}
+
+.role {
+  position: relative;
+  width: 690px;
+  margin: 0 auto 20px;
+  padding: 20px 40px 10px 25px;
+  display: block;
+  box-shadow: whiteShadow;
+  background-color: white;
+}
+
+.arrow {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+}
+
+.roleTitle {
+  padding-bottom: 15px;
+  font-weight: 200;
+  color: blueText;
+  font-size: 30px;
+}
+
+.roleDescription {
+  line-height: 22px;
+  color: grayDark;
+}

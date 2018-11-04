@@ -1,0 +1,23 @@
+@value theme: "../../styles/theme.css";
+@value screen-md, blue, blueText, validationRed, grayBorder, grayDark from theme;
+
+.wrapper {
+  display: inline-block;
+}
+
+.labelText {
+  padding-left: 15px;
+  line-height: 23px;
+  text-align: left;
+  color: blueText;
+  cursor: pointer;
+}
+
+.labelText.noLabel {
+  display: none;
+}
+
+.react-toggle, .labelText {
+  display: inline-block;
+  vertical-align: top;
+}
